@@ -45,7 +45,10 @@ function App() {
     },
     {
       path: '*',
-      element: <div>404 Not Found</div>
+      element: <div className='font-bold bg-gray-200 text-gray-900 mx-12 my-40 p-12 shadow-lg'>
+        <h1 className='text-4xl mb-4'>Not Found!!!</h1>
+        <p className='text-2xl'>Please try again</p>
+      </div>
     }
   ]);
 

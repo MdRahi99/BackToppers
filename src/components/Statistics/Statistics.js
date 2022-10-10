@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Statistics = () => {
-
+   
     return (
         <div>
-            <h1>ok</h1>
+            <h1>Total Number of Quiz:</h1>
         </div>
     );
 };
