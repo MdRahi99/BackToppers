@@ -8,7 +8,7 @@ const Header = () => {
                 <div className='font-semibold'>
                     <NavLink className='' to={'/home'}><span className='text-3xl text-emerald-600'>Back</span> Toppers</NavLink>
                 </div>
-                <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 items-center   gap-1 lg:gap-4 font-bold'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 items-center gap-1 lg:gap-4 font-bold'>
                     <NavLink className={({isActive}) => isActive ? 'text-emerald-600 rounded': undefined} to={'/home'}>Home</NavLink>
                     <NavLink className={({isActive}) => isActive ? 'text-emerald-600 rounded': undefined} to={'/statistics'}>Statistics</NavLink>
                     <NavLink className={({isActive}) => isActive ? 'text-emerald-600 rounded': undefined} to={'/blog'}>Blog</NavLink>
