@@ -4,7 +4,7 @@ const Blog = () => {
     return (
         <div>
             <h1 className='text-3xl w-5/6 mx-auto p-6 bg-gray-200 my-4'>Blogs</h1>
-            <div className='grid grid-cols-3 gap-8 w-5/6 mx-auto text-left p-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 w-5/6 mx-auto text-left p-4'>
                 <div className='bg-gray-200 p-4 rounded'>
                 <h1 className='text-2xl font-semibold mb-3'>What is the purpose of react router?</h1>
                 <p>Answer: React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.</p>

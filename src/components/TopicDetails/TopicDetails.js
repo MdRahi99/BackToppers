@@ -12,12 +12,12 @@ const TopicDetails = () => {
 
             <div className='shadow-md bg-gray-100 p-4 w-5/6 mx-auto my-12'>
                 <p className='font-semibold text-2xl'>Select correct answers:</p>
-            {
+                {
                 topic.data.questions.map(question => <Details
                     key={question.id}
                     question={question}
                 ></Details>)
-            }
+                }
             </div>
         </div>
     );

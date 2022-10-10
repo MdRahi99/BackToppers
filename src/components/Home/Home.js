@@ -8,7 +8,7 @@ const Home = () => {
     
     return (
         <div className='py-12'>
-            <div className='grid grid-cols-2 gap-8 w-5/6 mx-auto my-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-8 w-5/6 mx-auto my-8'>
                 <div>
                     <img className='h-92' src={Img} alt="" />
                 </div>
