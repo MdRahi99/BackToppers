@@ -5,7 +5,6 @@ import Topic from '../Topic/Topic';
 
 const Home = () => {
     const topics = useLoaderData();
-    console.log(topics);
     
     return (
         <div className='py-12'>
