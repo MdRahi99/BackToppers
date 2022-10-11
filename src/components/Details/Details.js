@@ -4,7 +4,7 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 const Details = ({ques}) => {
 
     const {options, question, correctAnswer} =ques;
-    console.log(ques)
+    
     const [, setCorrectBtn] = useState([]);
     const [ansBtn, setAnsBtn] = useState([]);
 

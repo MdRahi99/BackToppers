@@ -14,7 +14,7 @@ const Header = () => {
                     <NavLink className={({isActive}) => isActive ? 'text-emerald-600 rounded': undefined} to={'/blog'}>Blog</NavLink>
                 </div>
                 <div className='hidden lg:flex'>
-                    <NavLink className='' to={'/about'}>About</NavLink>
+                    <NavLink className={({isActive}) => isActive ? 'text-emerald-600 rounded': undefined} to={'/about'}>About</NavLink>
                 </div>
             </nav>
         </div>
