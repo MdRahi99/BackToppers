@@ -5,7 +5,19 @@ const Details = ({ques}) => {
 
     const {options, question, correctAnswer} =ques;
     console.log(ques)
+    const [, setCorrectBtn] = useState([]);
     const [ansBtn, setAnsBtn] = useState([]);
+
+    const handleAns = (e) => {
+        if(e.target.value === correctAnswer){
+            alert('Correct Answer');
+        }
+        else{
+            alert('Wrong Answer');
+        }
+        setCorrectBtn(e.target.value);
+    }
+
     const handleBtn = () => {
         setAnsBtn(<h1 className='bg-gray-500 text-white py-3 w-5/6 lg:w-3/6 mx-auto mt-12 rounded'>correct Answer: <span className='font-bold'>{correctAnswer}</span></h1>)
     }
@@ -17,25 +29,21 @@ const Details = ({ques}) => {
                 <EyeIcon onClick={() => handleBtn()} className="h-6 w-6 text-gray-800"/>
             </div>
             
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 w-5/6 mx-auto'>
-                <div className='flex w-5/6 mx-auto'>
-                    <input type="radio" name="radio" className="radio radio-secondary"/>
-                    <p className='ml-4'>{options[0]}</p> 
+            <div className='grid grid-cols-1 lg:grid-cols-4 font-semibold gap-2 w-5/6 mx-auto'>
+                <div className='flex w-5/6 mx-auto p-4 bg-gray-300 hover:bg-gray-400 rounded'>
+                    <input onClick={handleAns} type="button" name="radio" value={options[0]} className="radio radio-secondary whitespace-normal w-5/6 mx-auto"/>
                 </div>
 
-                <div className='flex w-5/6 mx-auto'>
-                    <input type="radio" name="radio" className="radio radio-secondary"/>
-                    <p className='ml-4'>{options[1]}</p> 
+                <div className='flex w-5/6 mx-auto p-4 bg-gray-300 hover:bg-gray-400 rounded'>
+                    <input onClick={handleAns} type="button" name="radio" value={options[1]} className="radio radio-secondary whitespace-normal w-5/6 mx-auto"/>
                 </div>
 
-                <div className='flex w-5/6 mx-auto'>
-                    <input type="radio" name="radio" className="radio radio-secondary"/>
-                    <p className='ml-4'>{options[2]}</p> 
+                <div className='flex w-5/6 mx-auto p-4 bg-gray-300 hover:bg-gray-400 rounded'>
+                    <input onClick={handleAns} type="button" name="radio" value={options[2]} className="radio radio-secondary whitespace-normal w-5/6 mx-auto"/>
                 </div> 
 
-                <div className='flex w-5/6 mx-auto'>
-                    <input type="radio" name="radio" className="radio radio-secondary"/>
-                    <p className='ml-4'>{options[3]}</p> 
+                <div className='flex w-5/6 mx-auto p-4 bg-gray-300 hover:bg-gray-400 rounded'>
+                    <input onClick={handleAns} type="button" name="radio" value={options[3]} className="radio radio-secondary whitespace-normal w-5/6 mx-auto"/> 
                 </div> 
             </div>
 
