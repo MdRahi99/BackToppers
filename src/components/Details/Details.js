@@ -2,7 +2,6 @@ import React from 'react';
 import Options from '../Options/Options';
 
 const Details = ({question}) => {
-   
     return (
         <div className='shadow-lg bg-gray-200 p-4 my-8'>
             <h1 className='text-1xl lg:text-2xl font-semibold mb-6'>{question.question}</h1>
