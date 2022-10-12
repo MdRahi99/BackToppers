@@ -8,7 +8,7 @@ const Statistics = () => {
    const data = chart.data;
     return (
         <div className='m-2 p-8 bg-gray-200'>
-            <LineChart className='w-full mx-auto' width={400} height={400} data={data}>
+            <LineChart className='w-full mx-auto' width={350} height={400} data={data}>
                 <Line type='monotone' dataKey='total' stroke='#82ca9d'></Line>
                     <XAxis dataKey='name'></XAxis>
                     <YAxis dataKey=''></YAxis>
